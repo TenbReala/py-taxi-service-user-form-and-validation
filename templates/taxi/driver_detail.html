@@ -27,5 +27,5 @@
       <p>No cars!</p>
     {% endfor %}
   </div>
-  <a href="{% url 'taxi:driver-create' %}" class="btn btn-danger" role="button">Delete</a>
+  <a href="{% url 'taxi:driver-delete' driver.id %}" class="btn btn-danger" role="button">Delete</a>
 {% endblock %}
